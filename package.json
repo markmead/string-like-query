@@ -1,0 +1,14 @@
+{
+  "name": "string-like-query",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "module": "dist/like.esm.js",
+  "unpkg": "dist/like.min.js",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.16.2"
+  }
+}

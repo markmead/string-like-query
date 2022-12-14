@@ -1,0 +1,1 @@
+function o(){Object.assign(String.prototype,{like(i={}){let{splitAt:e=3,searchAgainst:l=[],forceLowercase:r=!1,looseSearch:c=!1}=i,u=this.length,a=r?this.toLowerCase():this,s=[];for(let t=0;t<u;t+=e)s.push(a.substring(t,t+e));return!!l.flatMap(t=>{let h=r?t.toLowerCase():t;return(c?s:s.filter(n=>n.length===e)).filter(n=>h.includes(n))}).length}})}var k=o;export{k as default};
