@@ -54,6 +54,7 @@ searchInput.addEventListener('input', function () {
 | searchAgainst  | Array   | []      | What values to search against.                                    |
 | forceLowercase | Boolean | false   | If the search should be done all in lowercase.                    |
 | looseSearch    | Boolean | false   | Limit the search to string chunks with a length of the `splitAt`. |
+| eagerSearch    | Boolean | false   | If the search should filter before a string chunk is created.     |
 
 ### How it Works
 

@@ -5,9 +5,15 @@ Object.assign(String.prototype, {
       searchAgainst = [],
       forceLowercase = false,
       looseSearch = false,
+      eagerSearch = false,
     } = searchData
 
     const stringLength = this.length
+
+    if (!eagerSearch && stringLength !== splitAt) {
+      return true
+    }
+
     const stringFormatted = forceLowercase ? this.toLowerCase() : this
 
     let stringChunks = []

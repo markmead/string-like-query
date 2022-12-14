@@ -1,6 +1,6 @@
 {
   "name": "string-like-query",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A looser but configurable approach to searching a string for a matching substring 🔍",
   "keywords": [
     "String Like",
