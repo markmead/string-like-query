@@ -1,8 +1,14 @@
 {
   "name": "string-like-query",
   "version": "1.0.0",
-  "description": "",
-  "keywords": [],
+  "description": "A looser but configurable approach to searching a string for a matching substring 🔍",
+  "keywords": [
+    "String Like",
+    "String Matching",
+    "Database Like",
+    "Database Query",
+    "Like Query"
+  ],
   "module": "dist/like.esm.js",
   "unpkg": "dist/like.min.js",
   "scripts": {
