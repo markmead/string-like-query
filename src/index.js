@@ -6,34 +6,32 @@ export default function () {
         searchAgainst = [],
         forceLowercase = false,
         looseSearch = false,
-      } = searchData;
+      } = searchData
 
-      const stringLength = this.length;
-      const stringFormatted = forceLowercase ? this.toLowerCase() : this;
+      const stringLength = this.length
+      const stringFormatted = forceLowercase ? this.toLowerCase() : this
 
-      let stringChunks = [];
+      let stringChunks = []
 
-      for (let i = 0; i < stringLength; i += splitAt) {
-        stringChunks.push(stringFormatted.substring(i, i + splitAt));
+      for (let loopPos = 0; loopPos < stringLength; loopPos += splitAt) {
+        stringChunks.push(stringFormatted.substring(loopPos, loopPos + splitAt))
       }
 
       const includedResults = searchAgainst.flatMap((searchAgainstValue) => {
         const stringFormatted = forceLowercase
           ? searchAgainstValue.toLowerCase()
-          : searchAgainstValue;
+          : searchAgainstValue
 
         const chunksFiltered = looseSearch
           ? stringChunks
-          : stringChunks.filter(
-              (stringChunk) => stringChunk.length === splitAt
-            );
+          : stringChunks.filter((stringChunk) => stringChunk.length === splitAt)
 
         return chunksFiltered.filter((stringChunk) =>
           stringFormatted.includes(stringChunk)
-        );
-      });
+        )
+      })
 
-      return !!includedResults.length;
+      return !!includedResults.length
     },
-  });
+  })
 }

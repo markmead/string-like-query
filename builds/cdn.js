@@ -1,3 +1,3 @@
-import like from "../src/index.js";
+import like from '../src/index.js'
 
-document.addEventListener("DOMContentLoaded", like());
+document.addEventListener('DOMContentLoaded', like())

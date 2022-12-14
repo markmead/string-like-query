@@ -1,3 +1,3 @@
-import like from "../src/index.js";
+import like from '../src/index.js'
 
-export default like;
+export default like
